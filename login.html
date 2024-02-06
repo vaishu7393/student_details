@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT LOGIN</title>
+    <style>
+      body{
+        direction:ltr;
+      }
+        ::placeholder {
+          color:pink;
+          opacity: 1;
+          font-size:10px;
+          font-weight: 800;
+              }
+              input{
+                border:1px skyblue;
+              }
+        input:focus{
+        outline: none;
+        font-size: 15px;
+        color:orange;
+        font-weight: 800;
+              }
+        </style>
+</head>
+<body>
+    {% extends "index.html" %}
+    {% block content %}
+    <div style="text-align: center;">
+        <h1 style="color:aquamarine;font-weight: 800;display: inline-block;font-family:cursive;box-shadow: 0px 0px 10px red;" class="mt-5 px-3 py-2 bg-primary">STUDENT LOGIN</h1>
+    </div>
+    <form action="" method="post">
+        <div class="d-flex mt-5" style="align-items: center;justify-content: center;">
+        <div class="col-5 p-5" style="box-shadow: 0px 0px 10px pink;">
+        <div class="mb-3"  style="text-align:left;">
+          <labelclass="form-label" style="font-weight: 800;">Username :</label><br>
+          <input type="text" class="text-decoration" placeholder="Enter the Username" style="width: 100%;border-radius: 10px;" name="username"> 
+        </div>
+        <div class="mb-3" style="text-align:left;">
+          <label for="exampleInputPassword1" class="text-decoration" style="font-weight: 800;">Password :</label><br>
+          <input  placeholder="Enter The Password" type="password" class="text-decoration"  id="exampleInputPassword1" style="width: 100%;border-radius: 10px;" name="password">
+        </div>
+        <div style="text-align:center;">
+            <button type="submit" class="text-decoration"style="font-weight: 600;">Submit</button>
+        </div>
+        </div>
+    </div>
+      </form>
+    {% endblock %}
+</body>
+</html>
+

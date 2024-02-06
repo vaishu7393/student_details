@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit the Student-Details</title>
+    <style>
+            input{
+            margin:10px 0px;
+            width:98%;
+            padding:10px 10px;
+            background-color: purple;
+            color:white;
+            border: none;
+            border-radius: 15px;
+        }
+        .vaishu input{
+            width:20%;
+            border-radius:  5px;
+            padding:10px 5px;
+            background-color:orange;
+            color:white;
+            border: none; 
+            font-weight: 800;
+            font-size: 15px;
+    
+        }
+        input:focus{
+            outline: none;
+        }
+        ::placeholder{
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        label{
+            color: orange;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        table {
+        margin-top: 20px;
+        border-collapse:collapse;
+        width: 100%;
+        border: 2px solid black;
+        }
+
+        th, td {
+        text-align:center;
+        padding: 6px;
+        border: 2px solid black;
+        }
+
+        tr:nth-child(even) {
+        background-color: #D6EEEE;
+        }
+        tr:nth-child(odd) {
+        background-color: #D6EEEE;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: justify;">
+        <h1 style="color: white;background-color:blueviolet;display: inline-block;padding: 10px 15px;">EDIT STUDENT_DETAILS</h1>
+       </div>
+        <div style="display: flex;justify-content:center;">
+        <form method="post" style="width: 30%;box-shadow: 0px 0px 10px rgb(91, 38, 204);padding: 30px 25px;">
+            <label for="Name">Name :</label><br>
+            <input type="text" name="Name" placeholder="Enter your Name" value="{{data.Name}}"><br>
+            <label for="Age">Age :</label><br>
+            <input type="number" name="Age" placeholder="Enter your Age" value="{{data.Age}}"><br>
+            <label for="RollNO">Roll_NO :</label><br>
+            <input type="number" name="RollNo" placeholder="Enter your Roll_Number" value="{{data.RollNO}}"><br>
+            <label for="Marktamil">Tamil:</label><br>
+            <input type="number" name="Tamil" placeholder="Enter The Tamil Marks" value="{{data.Marks[0]}}"><br>
+            <label for="Markenglish">English :</label><br>
+            <input type="number" name="English" placeholder="Enter The English Marks"  value="{{data.Marks[1]}}"><br>
+            <label for="Markmaths">Maths:</label><br>
+            <input type="number" name="Maths" placeholder="Enter The Maths Marks"  value="{{data.Marks[2]}}"><br>
+            <label for="Markscience">Science:</label><br>
+            <input type="number" name="Science" placeholder="Enter The Science Marks"  value="{{data.Marks[3]}}"><br>
+            <label for="Marksocialscience">Social Science :</label><br>
+            <input type="number" name="Socialscience" placeholder="Enter The Social Science Marks"  value="{{data.Marks[4]}}"><br>
+            <div  class="vaishali" style="text-align: center;">
+            <input type="submit" value="submit">
+            </div>
+        </form>
+        </div>
+</body>
+</html>
